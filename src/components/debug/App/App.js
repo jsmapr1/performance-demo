@@ -3,7 +3,6 @@ import './App.css';
 import TextInformation from '../TextInformation/TextInformation';
 
 export const TextContext = createContext();
-TextContext.displayName = 'TextContext';
 
 function Debug() {
   const [text, setText] = useState('');

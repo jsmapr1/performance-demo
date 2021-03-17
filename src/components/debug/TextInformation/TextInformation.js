@@ -22,7 +22,7 @@ export default function TextInformation() {
       <button onClick={() => toggleTabs('characterCount')}>Character Count</button>
       <button onClick={() => toggleTabs('wordCount')}>Word Count</button>
       <button onClick={() => toggleTabs('characterMap')}>Character Map</button>
-      <CharacterCount show={tabs.characterCount} />
+      <CharacterCount show={tabs.characterCount} color="black" />
       <WordCount show={tabs.wordCount} />
       <CharacterMap show={tabs.characterMap} />
     </div>

@@ -6,6 +6,8 @@ import {
 } from "react-router-dom";
 
 import Debug from './components/debug/App/App';
+import Expensive from './components/expensive/App/App';
+import Reference from './components/reference/App/App';
 import Slow from './components/slow/App/App';
 
 export default function App() {
@@ -15,13 +17,16 @@ export default function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/debug">01 Debug</Link>
             </li>
             <li>
-              <Link to="/debug">Debug</Link>
+              <Link to="/slow">02 Slow</Link>
             </li>
             <li>
-              <Link to="/slow">Slow</Link>
+              <Link to="/expensive">03 Expensive</Link>
+            </li>
+            <li>
+              <Link to="/reference">04 Reference</Link>
             </li>
           </ul>
         </nav>
@@ -29,21 +34,20 @@ export default function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/debug">
-            <Debug />
+          <Route path="/reference">
+            <Reference />
+          </Route>
+          <Route path="/expensive">
+            <Expensive />
           </Route>
           <Route path="/slow">
             <Slow />
           </Route>
           <Route path="/">
-            <Home />
+            <Debug />
           </Route>
         </Switch>
       </div>
     </Router>
   );
-}
-
-function Home() {
-  return <h2>Home</h2>;
 }
