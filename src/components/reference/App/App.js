@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useCallback, useReducer, useState } from 'react';
 import './App.css';
 
@@ -6,8 +7,8 @@ import CharacterMap from '../CharacterMap/CharacterMap';
 function Reference() {
   const [text, setText] = useState('');
   const [showExplanation, toggleExplanation] = useReducer(state => !state, false)
-  //const transformer = useCallback(item => item.toLowerCase(), []);
-  const transformer = item => item.toLowerCase();
+  const transformer = useCallback(item => item.toLowerCase(), []);
+  // const transformer = item => item.toLowerCase();
 
   return(
     <div className="wrapper">

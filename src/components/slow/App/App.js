@@ -1,4 +1,5 @@
-import React, { createContext, useState } from 'react';
+/* eslint-disable */
+import React, { createContext, memo, useState } from 'react';
 import './App.css';
 import TextInformation from '../TextInformation/TextInformation';
 
@@ -28,4 +29,5 @@ function Slow() {
   )
 }
 
-export default Slow;
+export default memo(Slow);
+// export default Slow;

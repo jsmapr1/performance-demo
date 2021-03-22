@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { memo, useMemo } from 'react';
 import PropTypes from 'prop-types';
 
@@ -16,7 +17,8 @@ function itemize(text){
 }
 
 function CharacterMap({ showExplanation, text }) {
-  const characters = useMemo(() => itemize(text), [text]);
+  // const characters = useMemo(() => itemize(text), [text]);
+  const characters = itemize(text);
   return(
     <div>
       {showExplanation &&

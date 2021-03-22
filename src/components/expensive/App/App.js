@@ -1,4 +1,4 @@
-import React, { useCallback, useReducer, useState } from 'react';
+import React, { useReducer, useState } from 'react';
 import './App.css';
 
 import CharacterMap from '../CharacterMap/CharacterMap';
