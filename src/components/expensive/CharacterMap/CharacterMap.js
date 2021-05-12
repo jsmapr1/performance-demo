@@ -17,7 +17,6 @@ function itemize(text){
 }
 
 function CharacterMap({ showExplanation, text }) {
-  // const characters = useMemo(() => itemize(text), [text]);
   const characters = itemize(text);
   return(
     <div>
@@ -47,3 +46,5 @@ CharacterMap.defaultProps = {
 }
 
 export default memo(CharacterMap);
+
+// const characters = useMemo(() => itemize(text), [text]);

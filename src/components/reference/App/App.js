@@ -7,7 +7,6 @@ import CharacterMap from '../CharacterMap/CharacterMap';
 function Reference() {
   const [text, setText] = useState('');
   const [showExplanation, toggleExplanation] = useReducer(state => !state, false)
-  // const transformer = useCallback(item => item.toLowerCase(), []);
   const transformer = item => item.toLowerCase();
 
   return(
@@ -32,3 +31,4 @@ function Reference() {
 }
 
 export default Reference;
+// const transformer = useCallback(item => item.toLowerCase(), []);
